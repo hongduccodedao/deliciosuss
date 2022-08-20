@@ -16,10 +16,10 @@ export const Search = () => {
     }
 
     return (
-        <div className="form">
+        <div className="form" onSubmit={handleSubmit}>
             <div>
-                <FaSearch onSubmit={handleSubmit} />
-                <input type="text" />
+                <FaSearch />
+                <input type="text" onChange={(e) => setInput(e.target.value)} />
             </div>
         </div>
     );
