@@ -1,0 +1,42 @@
+.details__wrapper {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    display: flex;
+
+    .active {
+        background: linear-gradient(35deg, #494949, #313131);
+        color: #fff;
+    }
+
+    h2 {
+        margin-bottom: 2rem;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    li {
+        line-height: 1.6rem;
+    }
+
+    ul {
+        margin-top: 2rem;
+    }
+}
+
+button {
+    padding: 1rem 2rem;
+    color: #313131;
+    background: white;
+    border: 2px solid black;
+    margin-right: 2rem;
+    font-weight: 600;
+}
+
+.info {
+    margin-left: 10rem;
+}
+
+.description {
+    margin-top: 2rem;
+    font-weight: 600;
+}

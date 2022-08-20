@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Category from "./components/Category";
+import Pages from "./pages/Pages";
+
+import { BrowserRouter, Link } from "react-router-dom";
+import { Search } from "./components/Search";
+import { GiKnifeFork } from 'react-icons/gi'
+
+import "./App.scss";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <BrowserRouter>
+                <div className="nav">
+                    <Link to="/" className="logo">
+                        <GiKnifeFork />
+                    </Link>
+                </div>
+                <Search />
+                <Category />
+                <Pages />
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;

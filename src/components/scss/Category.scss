@@ -1,0 +1,30 @@
+.list {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.Slink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 2rem;
+    text-decoration: none;
+    background: linear-gradient(35deg, #494949, #313131);
+    color: #fff;
+    width: 6rem;
+    height: 6rem;
+    cursor: pointer;
+    transform: scale(0.8);
+
+    h4 {
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    &.active {
+        background: linear-gradient(to right, #f27121, #e94057);
+    }
+}
